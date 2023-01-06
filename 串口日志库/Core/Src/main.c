@@ -91,10 +91,10 @@ int main(void) {
   HAL_Delay(100);
   CAW_LOG_Init(&huart1, true);
 
-  CAW_LOG_INFO("Hello Rick!");
-  CAW_LOG_DEBUG("Hello Rick!");
-  CAW_LOG_WARN("Hello Rick!");
-  CAW_LOG_ERROR("Hello Rick!");
+  CAW_LOG_DEBUG("Hello! Rick");
+  CAW_LOG_INFO("Hello! Rick");
+  CAW_LOG_WARN("Hello! Rick");
+  CAW_LOG_ERROR("Hello! Rick");
   /* USER CODE END 2 */
 
   /* Infinite loop */

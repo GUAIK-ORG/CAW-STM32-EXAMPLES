@@ -2,8 +2,8 @@
  * @Author: Rick rick@guaik.io
  * @Date: 2022-12-09 14:15:44
  * @LastEditors: Rick rick@guaik.io
- * @LastEditTime: 2022-12-13 19:57:07
- * @FilePath: \CAW-Robot\Core\Utils\Log\log.c
+ * @LastEditTime: 2023-01-05 14:47:13
+ * @FilePath: \CAW-STM32-EXAMPLES\CAW-PACKAGES\Utils\Log\log.c
  * @Description:
  * Copyright (c) 2022 by Rick email: rick@guaik.io, All Rights Reserved.
  */
@@ -22,8 +22,8 @@ int CAW_LOG_Init(UART_HandleTypeDef* huart, bool enable_color) {
 
 void CAW_LOG_Write(const char* fmt, CAW_LOG_LEVEL level, const char* file,
                    int line, const char* func, ...) {
-  char tmp[512];
-  char buf[512];
+  char tmp[128];
+  char buf[128];
   memset(tmp, 0, sizeof(tmp));
   memset(buf, 0, sizeof(buf));
   va_list args;
