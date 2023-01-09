@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "stdarg.h": "c",
+        "dmpkey.h": "c",
+        "arm_math.h": "c"
+    }
+}
